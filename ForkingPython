@@ -1,0 +1,15 @@
+'''count  number of time doge appears in string, also 'g' can be replaced by any letter from a to z, so dope is also correct'''
+
+def doge_count(str):
+    count = 0
+    ##Your code here
+    pattern = 'do[a-z]e' 
+    count  = 0
+    import re
+
+    matches = re.findall(pattern, str)
+
+    for i in matches:
+        count = count + 1
+    
+    return count
